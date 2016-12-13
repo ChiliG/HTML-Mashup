@@ -18,7 +18,7 @@ Welcome to the <b>Massive</b> HTML extravaganza<small><sup>tm</sup></small>!
 <li title="Express yourself!"><a href="#csslink">CSS</a></li>
 <li title="Getting around HTML fast"><a href="#link">Links</a></li>
 <li title="Document your photography skills"><a href="#image">Images</a></li>
-<li title="Like dinner or coffee">Tables</li>
+<li title="Like dinner or coffee"><a href="#table">Tables</a></li>
 </ul>
 <p>And much much more!</p>
 
@@ -101,7 +101,7 @@ You can do all sorts of things with color...</p>
 <p>Here is a link to a full reference of HTML <a href="http://www.w3schools.com/colors/colors_names.asp">colors!</a></p>
 
 <hr id="csslink">
-<head>
+
 <style>
 #css {
 color:black;
@@ -119,7 +119,7 @@ a.special:hover
 {color:blue; text-decoration:underline}
 
 </style>
-</head>
+
 <h2 style="text-align:center;">CSS</h2>
 <p>Also known as <i><b>Cascading Style Sheets</b></i>, CSS is another easy way to customize the style on your page. While some of the previous style functions used CSS, it can also...</p> 
 
@@ -160,15 +160,64 @@ a.special:hover
 <img src="http://vignette3.wikia.nocookie.net/zelda/images/f/fd/Map_of_Hyrule_(Twilight_Princess).png/revision/latest?cb=20090330213854" alt="Map of Hyrule" usemap="#Hyrule" style="width:600px;"> 
 </p>
 <map name="Hyrule">
-	<area shape="rect" coords="307,174,374,248" href="https://s-media-cache-ak0.pinimg.com/originals/45/4c/74/454c7465f3e5ae4c76ef77a7cb7ee13b.jpg">
+	<area shape="poly" coords="312,246,312,210,340,175,365,209,372,246" href="https://s-media-cache-ak0.pinimg.com/originals/45/4c/74/454c7465f3e5ae4c76ef77a7cb7ee13b.jpg">
 	<area shape="rect" coords="321,344,389,422" href="http://firedragonnatsu.weebly.com/uploads/3/8/7/5/38752661/5660592_orig.jpg">
 </map>
 
-<h3 style="text-align:center">Here is a map with image mapping. Try clicking on some locations in the image.</h3>
+<h3 style="text-align:center;">Here is a map with image mapping. Try clicking on some locations in the image.</h3>
 
+<hr id="table">
+
+<h2 style="text-align:center;">Tables</h2>
+<table>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Favorite Food</th>
+</tr>
+<tr>
+<td>Chris</td>
+<td>17</td>
+<td>Chili</td>
+</tr>
+<tr>
+<td>Ryker</td>
+<td>18</td>
+<td>Pralines</td>
+</tr>
+</table>
+
+<p>You can create tables to use in HTML. Above is a very basic table, you can do much more with tables than just that.</p>
+
+
+<style>
+table#t01, th#t01, td#t01 {
+border: 1px solid black;
+border-collapse: collapse;
+}
+</style>
+
+
+<table id="t01" style="width:400px;">
+<tr>
+<th id="t01">Name</th>
+<th id="t01">Age</th>
+<th id="t01">Favorite Food</th>
+</tr>
+<tr>
+<td id="t01">Chris</td>
+<td id="t01">17</td>
+<td id="t01">Chili</td>
+</tr>
+<tr>
+<td id="t01">Ryker</td>
+<td id="t01">18</td>
+<td id="t01">Pralines</td>
+</tr>
+</table>
 
 <p style="text-align:center"><a href="#top">Back to top</a></p>
 
-<body>
-<html>
+</body>
+</html>
 
